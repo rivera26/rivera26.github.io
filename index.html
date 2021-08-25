@@ -1,82 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
     <title>Jonathan Rivera</title>
   </head>
-    <body class="text-center bg-dark text-white">
-        <header class="mb-auto">
-            <div class="container">
-                <nav class="nav nav-masthead">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#projects">Projects</a>
-                    <a class="nav-link" href="#previous">Previous Work</a>
-                    <a class="nav-link" href="#contact">Contact</a>
-                </nav>
+  <body class="text-center bg-dark text-white">
+    <header class="mb-2">
+      <div class="container">
+        <nav class="nav nav-masthead">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#previous">Previous Work</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="centered">
+        <h1>Jonathan Rivera</h1>
+        <p class="lead">Computer Science graduate student.</p>
+      </div>
+      <svg
+        id="visual"
+        viewBox="0 0 960 400"
+        width="960"
+        height="400"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(457.03650980929456 220.16172933171003)">
+          <path
+            id="blob1"
+            d="M120.6 -118.3C161.1 -80.1 202.1 -40.1 211.5 9.4C220.9 58.9 198.9 117.9 158.4 139.9C117.9 161.9 58.9 146.9 14.7 132.2C-29.5 117.5 -58.9 102.9 -92.4 80.9C-125.9 58.9 -163.5 29.5 -167.4 -3.9C-171.2 -37.2 -141.5 -74.5 -108 -112.6C-74.5 -150.8 -37.2 -189.9 1.4 -191.3C40.1 -192.7 80.1 -156.5 120.6 -118.3"
+            fill="#000000"
+          ></path>
+        </g>
+        <g
+          transform="translate(471.076694397137 196.10811627434583)"
+          style="visibility: hidden"
+        >
+          <path
+            id="blob2"
+            d="M121.8 -115.6C163.5 -80.1 206.7 -40.1 201.4 -5.3C196.1 29.5 142.3 58.9 100.6 93.1C58.9 127.3 29.5 166.1 -13.6 179.7C-56.6 193.2 -113.1 181.5 -147 147.3C-180.8 113.1 -191.9 56.6 -178.4 13.6C-164.8 -29.5 -126.6 -58.9 -92.8 -94.4C-58.9 -129.9 -29.5 -171.5 5.3 -176.8C40.1 -182.1 80.1 -151.1 121.8 -115.6"
+            fill="#000000"
+          ></path>
+        </g>
+      </svg>
+      <script>
+        const tween = KUTE.fromTo(
+          "#blob1",
+          { path: "#blob1" },
+          { path: "#blob2" },
+          { repeat: 999, duration: 3000, yoyo: true }
+        );
+
+        tween.start();
+      </script>
+    </section>
+    <div class="spacer layer1"></div>
+    <section class="purple" id="projects">
+      <h1>Projects</h1>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-5 py-5">
+        <div class="col">
+          <a
+            href="https://github.com/SOS-Recipe/SOS_Recipe"
+            style="text-decoration: none"
+          >
+            <div class="card h-100 text-white bg-dark shadow-lg" id="card1">
+              <div class="d-flex flex-column h-100 p-5 pb-3">
+                <h2 class="pt-4 mt-4 mb-4 display-7 fw-bold">SOS Recipe</h2>
+                <p class="mt-4 mb-5">React Web Application</p>
+              </div>
             </div>
-        </header>
-        <section>
-            <h1>Jonathan Rivera</h1>
-            <p class="lead">
-                Computer Science graduate student.
-            </p>
-        </section>
-        <div class="spacer layer1"></div>
-        <section class="purple" id="projects">
-            <h1>Projects</h1>
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-5 py-5">
-                <div class="col">
-                    <a href="https://github.com/SOS-Recipe/SOS_Recipe" style="text-decoration: none;">
-                        <div class="card h-100 text-white bg-dark shadow-lg" id="card1">
-                            <div class="d-flex flex-column h-100 p-5 pb-3">
-                                <h2 class="pt-4 mt-5 mb-4 display-7 fw-bold">SOS Recipe</h2>
-                                <p class="mt-auto">React Web Application</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="https://github.com/EverPlainsGroup/EverPlains" style="text-decoration: none;">
-                        <div class="card h-100 text-white bg-dark shadow-lg" id="card2">
-                            <div class="d-flex flex-column h-100 p-5 pb-3">
-                                <h2 class="pt-4 mt-5 mb-4 display-7 fw-bold">EverPlains</h2>
-                                <p class="mt-auto">2D Platformer Unity Game</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="https://github.com/CS510-PokeSearch/pokesearch" style="text-decoration: none;">
-                        <div class="card h-100 text-white bg-dark shadow-lg" id="card3">
-                            <div class="d-flex flex-column h-100 p-5 pb-3">
-                                <h2 class="pt-4 mt-5 mb-4 display-7 fw-bold">Pokésearch</h2>
-                                <p class="mt-auto">Rust Rocket Web Application</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="https://github.com/EverPlainsGroup/EverPlains"
+            style="text-decoration: none"
+          >
+            <div class="card h-100 text-white bg-dark shadow-lg" id="card2">
+              <div class="d-flex flex-column h-100 p-5 pb-3">
+                <h2 class="pt-4 mt-4 mb-4 display-7 fw-bold">EverPlains</h2>
+                <p class="mt-4 mb-5">2D Platformer Unity Game</p>
+              </div>
             </div>
-        </section>
-        <section id="previous">
-
-        </section>
-        <section class="pink" id="contact">
-
-        </section>
-        <footer class="mt-auto">
-            <p>
-                &copy; Copyright 2021 Jonathan Rivera
-            </p>
-        </footer>
-    </body>
-
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="https://github.com/CS510-PokeSearch/pokesearch"
+            style="text-decoration: none"
+          >
+            <div class="card h-100 text-white bg-dark shadow-lg" id="card3">
+              <div class="d-flex flex-column h-100 p-5 pb-3">
+                <h2 class="card-text pt-4 mt-4 mb-4 display-7 fw-bold">
+                  Pokésearch
+                </h2>
+                <p class="mt-4 mb-5">Rust Rocket Web Application</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="previous">
+      <h1>Previous Work</h1>
+    </section>
+    <section class="pink" id="contact">
+      <h1>Contact</h1>
+    </section>
+    <footer class="mt-auto">
+      <p>&copy; Copyright 2021 Jonathan Rivera</p>
+    </footer>
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

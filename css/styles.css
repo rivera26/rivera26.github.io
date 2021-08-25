@@ -8,11 +8,17 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  text-align: justify;
   justify-content: center;
   align-items: center;
   min-height: 400px;
   padding: 20px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .spacer {
@@ -74,38 +80,38 @@ nav {
  */
 
 .card {
-    position: relative;
-    background-color: #fff;
-    border: 5px solid rgb(36, 36, 36);
-    border-radius: 1rem;
-    text-shadow: 0 0.2rem 0.2rem black;
-    transition: transform .2s;
-    text-align: left;
+  position: relative;
+  background-color: #fff;
+  border: 5px solid rgb(36, 36, 36);
+  border-radius: 1rem;
+  text-shadow: 0 0.2rem 0.2rem black;
+  transition: transform 0.2s;
+  text-align: left;
 }
 
 .card:hover {
-    transform: scale(1.2);
-    z-index: 90;
-    text-decoration: underline;
+  transform: scale(1.2);
+  z-index: 90;
+  text-decoration: underline;
 }
 
 #card1 {
-    background-image: url('../img/landing-background.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../img/landing-background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #card2 {
-    background-image: url('../img/landing-background.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../img/everplains.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #card3 {
-    background-image: url('../img/landing-background.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../img/pokemon.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
