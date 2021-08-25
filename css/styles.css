@@ -58,12 +58,12 @@ section {
 }
 
 #about {
-    min-height: 600px !important;
+  min-height: 600px !important;
   padding-top: 10vh;
 }
 
 #about-text {
-    width: 100%;
+  width: 100%;
 }
 
 #experience {
@@ -157,32 +157,28 @@ form {
  * Media Queries
  */
 
-
 @media screen and (min-width: 769px) {
   form {
     width: 50%;
   }
-  
+
   #about {
-      min-height: 400px;
+    min-height: 400px;
   }
 
   #about-text {
-      width: 50%;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 1025px) {
-
-    #about-text {
-        width: 40%;
-    }
+  #about-text {
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-
-    #about {
-        margin-bottom: -200px;
-    }
-
+  #about {
+    margin-bottom: -200px;
+  }
 }
