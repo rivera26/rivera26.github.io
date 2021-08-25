@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
+  text-shadow: 0 0.1rem 0.1rem black;
 }
 
 section {
@@ -66,4 +67,45 @@ nav {
 
 .nav-masthead .active {
   color: #fff;
+}
+
+/*
+ * Cards
+ */
+
+.card {
+    position: relative;
+    background-color: #fff;
+    border: 5px solid rgb(36, 36, 36);
+    border-radius: 1rem;
+    text-shadow: 0 0.2rem 0.2rem black;
+    transition: transform .2s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    z-index: 90;
+    text-decoration: underline;
+}
+
+#card1 {
+    background-image: url('../img/landing-background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#card2 {
+    background-image: url('../img/landing-background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#card3 {
+    background-image: url('../img/landing-background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
