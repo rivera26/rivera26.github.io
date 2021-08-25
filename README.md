@@ -8,5 +8,5 @@ The site was created using HTML, CSS, Bootstrap 5.0, and the SVG Morph Component
 The site is deployed using GitHub pages at [rivera26.github.io](https://rivera26.github.io/).
 
 ## Acknowledgements
-[Wavy Background Tutorial with SVG & CSS by Fireship](https://www.youtube.com/watch?v=lPJVi797Uy0)
+[Wavy Background Tutorial with SVG & CSS by Fireship](https://www.youtube.com/watch?v=lPJVi797Uy0)  
 [Haikei SVG Asset Generator](https://haikei.app/)
