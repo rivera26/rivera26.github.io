@@ -112,7 +112,6 @@ li .active {
   background-color: #fff;
   border: 5px solid rgb(36, 36, 36);
   border-radius: 1rem;
-  text-shadow: 0 0.2rem 0.2rem black;
   transition: transform 0.2s;
   text-align: left;
 }
