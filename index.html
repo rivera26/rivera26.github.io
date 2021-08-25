@@ -20,7 +20,7 @@
     <title>Jonathan Rivera</title>
   </head>
   <body class="text-center bg-dark text-white">
-    <header class="mt-auto p-3 black">
+    <header class="mt-auto pb-4 p-2 black">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center">
           <ul class="nav">
@@ -40,11 +40,11 @@
         </div>
       </div>
     </header>
-    <section class="h-auto" id="about">
-      <div class="centered">
+    <section id="about">
+      <div class="centered px-3" id="about-text">
         <div>
           <h1>Jonathan Rivera</h1>
-          <p class="lead fs-5">
+          <p class="lead">
             I'm a Computer Science graduate student at Portland State
             University. I was born and raised in Houston, Texas, where I
             attended Rice University to receive my bachelor's degree. I double
@@ -175,9 +175,39 @@
       </a>
     </section>
     <section class="pink" id="contact">
-      <h1>Contact</h1>
+      <h1>Contact Me</h1>
+      <form class="bg-dark shadow-lg rounded mx-auto p-5 m-5">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="email"> Name: </label>
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" name="name" id="name" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="email"> Email: </label>
+            </div>
+            <div class="col-md-8">
+                <input type="email" class="form-control" name="email" id="email" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="message">Message:</label>
+            </div>
+            <div class="col-md-8">
+                <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+            </div>
+        </div>
+        <div>
+            <input type="submit" class="btn btn-primary rounded m-1" value="Submit" />
+        </div>
+      </form>
     </section>
-    <footer class="mt-auto">
+    <div class="spacer layer2"></div>
+    <footer>
       <p>&copy; Copyright 2021 Jonathan Rivera</p>
     </footer>
     <!-- Bootstrap Bundle with Popper -->

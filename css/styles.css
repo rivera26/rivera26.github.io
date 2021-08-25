@@ -34,6 +34,10 @@ section {
   margin-top: -100px;
 }
 
+.layer2 {
+  background-image: url("../img/layered-waves-haikei-2.svg");
+}
+
 .purple {
   background-color: #6600ff;
 }
@@ -43,7 +47,7 @@ section {
 }
 
 .black {
-    background-color: black !important;
+  background-color: black !important;
 }
 
 #visual {
@@ -54,16 +58,21 @@ section {
 }
 
 #about {
-    padding-top: 10vh;
+    min-height: 600px !important;
+  padding-top: 10vh;
+}
+
+#about-text {
+    width: 100%;
 }
 
 #experience {
-    box-shadow: inset 0 0 2rem black;
+  box-shadow: inset 0 0 2rem black;
 }
 
 #experience .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*
@@ -71,9 +80,10 @@ section {
  */
 
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 99;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
 li .nav-link {
@@ -132,4 +142,47 @@ li .active {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/*
+ * Form
+ */
+
+form {
+  display: grid;
+  width: 100%;
+}
+
+/*
+ * Media Queries
+ */
+
+
+@media screen and (min-width: 769px) {
+  form {
+    width: 50%;
+  }
+  
+  #about {
+      min-height: 400px;
+  }
+
+  #about-text {
+      width: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+    #about-text {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    #about {
+        margin-bottom: -200px;
+    }
+
 }
